@@ -215,3 +215,66 @@ const deposit = function (amount) {
 
 
 
+//q9
+
+const withdraw = function (amount) {
+  return currentAccount= currentAccount - amount 
+};
+
+
+
+//q10
+
+
+/*
+Write a closure function 
+createAccount that accepts a number argument initialValue
+that represents the starting value of the account balance 
+and return a closure function
+with two parameters, transactionType and amount 
+that deposit or withdraw from the account balance 
+depending on the transactionType and returns the total balance amount. 
+Make sure to prevent transactions that withdraw more than the total balance.*/
+
+
+
+
+const createAccount = function (initialValue)
+ {
+      let balance = initialValue
+     return function ( transactionType , amount )
+     {
+     
+        if (transactionType === "withdrow" )
+         {
+           if ( balance > amount )
+           {
+         return  balance = (balance - amount )
+           }
+           else { return 'insufficient funds, current balance:' + balance }
+
+         } 
+            if (transactionType ==="deposit" )
+            {
+           return  balance = (balance + amount )
+            }
+      }
+
+}; 
+const acount_1 = createAccount(50)
+const acount_2 = createAccount(100)
+
+
+
+
+
+/* EXTRA BRACTIC */ 
+
+
+
+const minMax = function (number) {
+   return "the maximum number is:"
+};
+
+
+
