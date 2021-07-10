@@ -170,18 +170,13 @@ and updates the count variable to equal the
 
 
 
- let toDo 
- let todo_2 
+ let list = ''
  
-
  const addToList = function (toDo) {
     
-  if (toDo === toDo){
-      return toDo 
-    }else { 
-    let todo_2 = toDo + todo_2
-    return todo_2
-  }
+ 
+    return list = list + ' '  + toDo
+  
 };
 
 
@@ -190,13 +185,33 @@ and updates the count variable to equal the
 
 
 
+ 
+ const creatToDoList = function () {
+  let list3 = ''
+ 
+    return function (toDo){
+      list3 = list3 + ' '  + toDo
+   return list3 
+    }
+
+};
+
+const list_1 = creatToDoList()
+
+
 
 
 
 
 //q8 
- let maount 
+
+
+
+ let  currentAccount = 0
  
 const deposit = function (amount) {
-  return amount 
+  return currentAccount= currentAccount+ amount 
 };
+
+
+
